@@ -11,13 +11,15 @@
 void stringFilter(const char * pInputStr, long lInputLen, char * pOutputStr)
 ```
 
-【输入】pInputStr：输入字符串  
-      
-           lInputLen：输入字符串长度  
+【输入】  
+pInputStr：输入字符串  
+lInputLen：输入字符串长度  
            
-【输出】pOutputStr：输出字符串，空间已经开辟好，与输入字符串等长
+【输出】  
+pOutputStr：输出字符串，空间已经开辟好，与输入字符串等长
 
-【注意】只需要完成该函数功能算法，中间不需要有任何IO的输入输出
+【注意】  
+只需要完成该函数功能算法，中间不需要有任何IO的输入输出
 
 >示例  
 >输入：`deefd`        输出：`def`  
@@ -36,12 +38,15 @@ void stringFilter(const char * pInputStr, long lInputLen, char * pOutputStr)
 void stringZip(const char * pInputStr, long lInputLen, char * pOutputStr);
 ```
 
-【输入】pInputStr：输入字符串 
- 
-           lInputLen：输入字符串长度         
-【输出】pOutputStr：输出字符串，空间已经开辟好，与输入字符串等长；
+【输入】  
+pInputStr：输入字符串   
+lInputLen：输入字符串长度
+         
+【输出】  
+pOutputStr：输出字符串，空间已经开辟好，与输入字符串等长；
 
-【注意】只需要完成该函数功能算法，中间不需要有任何IO的输入输出
+【注意】  
+只需要完成该函数功能算法，中间不需要有任何IO的输入输出
 
 >示例   
 输入：`cccddecc`   输出：`3c2de2c`  
@@ -62,17 +67,21 @@ void stringZip(const char * pInputStr, long lInputLen, char * pOutputStr);
 void arithmetic(const char * pInputStr, long lInputLen, char * pOutputStr);
 ```
 
-【输入】 pInputStr：输入字符串  
+【输入】  
+pInputStr：输入字符串  
+lInputLen：输入字符串长度         
 
-           lInputLen：输入字符串长度         
-【输出】 pOutputStr：输出字符串，空间已经开辟好，与输入字符串等长；
+【输出】  
+pOutputStr：输出字符串，空间已经开辟好，与输入字符串等长；
 
-【注意】只需要完成该函数功能算法，中间不需要有任何IO的输入输出
+【注意】  
+只需要完成该函数功能算法，中间不需要有任何IO的输入输出
 
 >示例   
 输入：`4 + 7`  输出：`11`  
 输入：`4 - 7`  输出：`-3`  
 输入：`9 ++ 7`  输出：`0` 注：格式错误   
+
 ---
 
 ##2013
@@ -86,16 +95,20 @@ void arithmetic(const char * pInputStr, long lInputLen, char * pOutputStr);
 void DivideString(const char * pInputStr, long lInputLen, char * pOutputStr); 
 ```
 
-【输入】pInputStr：输入字符串  
+【输入】  
+pInputStr：输入字符串  
+lInputLen：输入字符串长度                   
 
-          lInputLen：输入字符串长度                   
-【输出】pOutputStr：输出字符串，空间已经开辟好，与输入字符串等长； 
+【输出】  
+pOutputStr：输出字符串，空间已经开辟好，与输入字符串等长； 
 
-【注意】只需要完成该函数功能算法，中间不需要有任何IO 的输入输出 
+【注意】  
+只需要完成该函数功能算法，中间不需要有任何IO 的输入输出 
 
 >示例     
 输入：`abc def gh i        d`   
 输出：`abc,def,gh,i,d,`
+
 ---
 
 ###题2 逆序链表输出     
