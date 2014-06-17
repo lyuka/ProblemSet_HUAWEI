@@ -1,12 +1,25 @@
 #华为历年机试题集合
 ----
-##2014
 
-[题目1~3 code](http://blog.csdn.net/hackbuteer1/article/details/11132567)  
-[题目4~6 code](http://club.xdnice.com/thread-1320782-1-1.html)  
-[题目7 code](http://www.douban.com/group/topic/50308093/)
+华为机试共3道题，分值分别为60，50，40。时长2小时，上机环境支持语言包括C/C++/Java  
 
-###题1（60分）
+搜集的题目均来自网络：  
+[题1~3 code](http://blog.csdn.net/hackbuteer1/article/details/11132567)  
+[题4~6 code](http://club.xdnice.com/thread-1320782-1-1.html)  
+[题7 code](http://www.douban.com/group/topic/50308093/)  
+[题8~9 code](http://blog.csdn.net/hackbuteer1/article/details/11150519)  
+[题10～12 code](http://blog.csdn.net/hackbuteer1/article/details/11161557)   
+[题13 code](http://www.cnblogs.com/weisteve/archive/2011/09/17/2179989.html)  
+[题14 code](http://wenku.baidu.com/view/b6b0ed31a32d7375a417809d.html)  
+[题15~16 code](http://wenku.baidu.com/view/735c6687b9d528ea81c7791e.html)  
+[题17~18 code](http://wenku.baidu.com/view/84f014d950e2524de5187ef7.html?re=view)  
+[题19~23 code](http://www.cnblogs.com/weisteve/archive/2011/09/17/2179574.html)  
+[题24 code](http://www.cnblogs.com/weisteve/archive/2011/09/17/2179973.html)  
+[题25~27 code](http://wenku.baidu.com/view/603cf0631ed9ad51f01df215.html?re=view###)  
+[题28~30](http://wenku.baidu.com/view/4d7636e8172ded630b1cb6b0.html)
+
+
+###题1
 通过键盘输入一串小写字母（a~z）组成的字符串。请编写一个字符串过滤程序，若字符串中出现多个相同的字符，将非首次出现的字符过滤掉。比如字符串`abacacde`过滤结果为`abcde`。
 
 要求实现函数：
@@ -31,7 +44,7 @@ pOutputStr：输出字符串，空间已经开辟好，与输入字符串等长
 >输入：`pppppppp`     输出：`p`
 
 ---
-###题2（40分）：
+###题2
 通过键盘输入一串小写字母(a~z)组成的字符串。请编写一个字符串压缩程序，将字符串中连续出席的重复字母进行压缩，并输出压缩后的字符串。  
 压缩规则：  
 1. 仅压缩连续重复出现的字符。比如字符串`abcbc`由于无连续重复字符，压缩后的字符串还是`abcbc`  
@@ -58,7 +71,7 @@ pOutputStr：输出字符串，空间已经开辟好，与输入字符串等长�
 输入：`pppppppp` 输出：`8p` 
 
 ---
-###题3（50分）
+###题3
 通过键盘输入100以内正整数的加、减运算式，请编写一个程序输出运算结果字符串。
 输入字符串的格式为：“操作数1 运算符 操作数2”，“操作数”与“运算符”之间以一个空格隔开。
 
@@ -145,11 +158,9 @@ pOutputStr：输出字符串，空间已经开辟好，与输入字符串等长�
 输出：2689 
 
 ---
-##2013
 
-[code](http://blog.csdn.net/hackbuteer1/article/details/11150519)
 
-###题1 子串分离
+###题8 子串分离
 通过键盘输入任意一个字符串序列，字符串可能包含多个子串，子串以空格分隔。请编写一个程序，自动分离出各个子串，并使用`,`将其分隔，并且在最后也补充一个`,`并将子串存储。 
 如果输入`abc def gh i        d`，结果将是`abc,def,gh,i,d,` 
  
@@ -174,7 +185,7 @@ pOutputStr：输出字符串，空间已经开辟好，与输入字符串等长�
 
 ---
 
-###题2 逆序链表输出     
+###题9 逆序链表输出     
 将输入的一个单向链表，逆序后输出链表中的值。链表定义如下： 
 ```cpp
 typedef struct tagListNode 
@@ -196,23 +207,15 @@ void converse(ListNode **head);
 【注意】只需要完成该函数功能算法，中间不需要有任何IO 的输入输出 
 
 ---
-## 2012
-[题目1～3 code](http://blog.csdn.net/hackbuteer1/article/details/11161557)   
-[题目4 code](http://www.cnblogs.com/weisteve/archive/2011/09/17/2179989.html)  
-[题目5 code](http://wenku.baidu.com/view/b6b0ed31a32d7375a417809d.html)  
-[题目6~7 code](http://wenku.baidu.com/view/735c6687b9d528ea81c7791e.html)  
-[题目8~9 code](http://wenku.baidu.com/view/84f014d950e2524de5187ef7.html?re=view)  
-[题目10~14 code](http://www.cnblogs.com/weisteve/archive/2011/09/17/2179574.html)  
-[题目15 code](http://www.cnblogs.com/weisteve/archive/2011/09/17/2179973.html) 
 
-### 题1
+### 题10
 选秀节目打分，分为专家评委和大众评委，`score[]`数组里面存储每个评委打的分数，`judge_type[]`里存储与`score[]`数组对应的评委类别，`judge_type[i] == 1`，表示专家评委，`judge_type[i] == 2`，表示大众评委，`n`表示评委总数。打分规则如下：专家评委和大众评委的分数先分别取一个平均分（平均分取整），然后，总分 = 专家评委平均分  * 0.6 + 大众评委 * 0.4，总分取整。如果没有大众评委，则 总分 = 专家评委平均分，总分取整。函数最终返回选手得分。  
 函数接口
 ```cpp
 int cal_score(int score[], int judge_type[], int n)
 ``` 
 ---
-###题2
+###题11
 给定一个数组`input[]`，如果数组长度n为奇数，则将数组中最大的元素放到`output[]`数组最中间的位置，如果数组长度`n`为偶数，则将数组中最大的元素放到`output[]`数组中间两个位置偏右的那个位置上，然后再按从大到小的顺序，依次在第一个位置的两边，按照一左一右的顺序，依次存放剩下的数。
 例如：  
 >input[] = {3, 6, 1, 9, 7}   output[] = {3, 7, 9, 6, 1};  
@@ -223,7 +226,7 @@ int cal_score(int score[], int judge_type[], int n)
 void sort(int input[], int n, int output[])
 ```
 ---
-###题3 操作系统任务调度问题。
+###题12 操作系统任务调度问题。
 操作系统任务分为系统任务和用户任务两种。其中，系统任务的优先级 `< 50`，用户任务的优先级 `>= 50`且 `<= 255`。优先级大于`255`的为非法任务，应予以剔除。现有一任务队列`task[]`，长度为`n`，`task`中的元素值表示任务的优先级，数值越小，优先级越高。函数`scheduler`实现如下功能，将`task[]`中的任务按照系统任务、用户任务依次存放到 `system_task[]`数组和`user_task[]`数组中（数组中元素的值是任务在`task[]`数组中的下标），并且优先级高的任务排在前面，优先级相同的任务按照入队顺序排列（即先入队的任务排在前面），数组元素为`-1`表示结束。 例如：
 >task[] = {0, 30, 155, 1, 80, 300, 170, 40, 99}    
 >system_task[] = {0, 3, 1, 7, -1}    
@@ -236,7 +239,7 @@ void scheduler(int task[], int n, int system_task[], int user_task[])
 
 ---
 
-###题目4 实现约瑟夫环
+###题13 实现约瑟夫环
 问题描述： 
 输入一个由随机数组成的数列（数列中每个数均是大于0的整数，长度已知），和初始计数值m。从数列首位置开始计数，计数到m后，将数列该位置数值替换计数值m，并将数列该位置数值出列，然后从下一位置从新开始计数，直到数列所有数值出列为止。如果计数到达数列尾段，则返回数列首位置继续计数。请编程实现上述计数过程，同时输出数值出列的顺序。
  
@@ -247,7 +250,9 @@ void scheduler(int task[], int n, int system_task[], int user_task[])
 最后一轮计数出列数字为4，计数过程完成。 输出数值出列顺序为：2,3,1,4。 
 
 要求实现函数： 
-`void array_iterate(int len, int input_array[], int m, int output_array[])`
+```cpp
+void array_iterate(int len, int input_array[], int m, int output_array[])
+```
 
 【输入】  
 `int len`：输入数列的长度； `int intput_array[]`：输入的初始数列 `int m`：初始计数值   
@@ -262,12 +267,14 @@ void scheduler(int task[], int n, int system_task[], int user_task[])
 
 
 ---
-###题目5 删除字符串中所有给定的子串
+###题14 删除字符串中所有给定的子串
 
 问题描述：  
 在给定字符串中查找所有特定子串并删除，如果没有找到相应子串，则不作任何操作。 
 要求实现函数：  
-`int delete_sub_str(const char * str, const char * sub_str, char * result_str)`  
+```cpp
+int delete_sub_str(const char * str, const char * sub_str, char * result_str)
+```
 
 【输入】  
  `str`：输入的被操作字符串   
@@ -288,14 +295,16 @@ void scheduler(int task[], int n, int system_task[], int user_task[])
 输出：result_str = `abcde123abcd123` 返回：0  
 
 ---
-###题目6
+###题15
 问题描述： 
 比较两个数组，要求从数组最后一个元素开始逐个元素向前比较，如果2个数组长度不等，则只比较较短长度数组个数元素。请编程实现上述比较，并返回比较中发现的不相等元素的个数 比如：  
 >数组{1,3,5}和数组{77,21,1,3,5}按题述要求比较，不相等元素个数为0  
 >数组{1,3,5}和数组{77,21,1,3,5,7}按题述要求比较，不相等元素个数为3 
 
 要求实现函数：   
-`int array_compare(int len1, int array1[], int len2, int array2[])`
+```cpp
+int array_compare(int len1, int array1[], int len2, int array2[])
+```
 
 【输入】  
 int len1：输入被比较数组1的元素个数； int array1[]：输入被比较数组1；   
@@ -310,7 +319,7 @@ int len2：输入被比较数组2的元素个数； int array2[]：输入被比�
 2. 输入：int array1[] = {1,3,5}，int len1 = 3，int array2[] = {77,21,1,3,5,7}，int len2 = 6 函数返回：3 
 
 ---
-###题目7 字符串四则运算
+###题16 字符串四则运算
 
 问题描述： 
 输入一个只包含个位数字的简单四则运算表达式字符串，计算该表达式的值。  
@@ -323,7 +332,9 @@ int len2：输入被比较数组2的元素个数； int array2[]：输入被比�
 5. 输入字符串一定是符合题意合法的表达式，其中只包括数字字符和四则运算符字符，除此之外不含其它任何字符，不会出现计算溢出情况 
 
 要求实现函数：   
-`int calculate(int len,char * expStr)`
+```cpp
+int calculate(int len,char * expStr)
+```
 
 【输入】  
 int len: 字符串长度； char *expStr: 表达式字符串;  
@@ -337,7 +348,7 @@ int len: 字符串长度； char *expStr: 表达式字符串;
 2. 输入：char * expStr = “8/3*3” 函数返回：6 
 
 ---
-###题目8
+###题17
 输入一个数，把它作为一个串，判断其中是否包含长度>=2的相同子串，如果包含，返回1，不包含，返回0； 
 
 >示例  
@@ -345,8 +356,10 @@ int len: 字符串长度； char *expStr: 表达式字符串;
 输入：`1223122`，包含两个`122`子串，返回1。
 
 ---
-###题目9 识别字符串中的整数并转换为数字形式 
-`void take_num(const char * strIn, int * n, unsigned int * outArray)`
+###题18 识别字符串中的整数并转换为数字形式 
+```cpp
+void take_num(const char * strIn, int * n, unsigned int * outArray)
+```
   
 【输入】  
 strIn：输入的字符串    
@@ -368,25 +381,108 @@ outArray：识别出来的整数值，其中outArray[0]是输入字符串中从�
 outArray = {0, 123, 456, 25, 3, 5} 
 
 ---
-###题10
+###题19
 编写函数`string deletestring（string str,string sub_str）`从`str`中查找匹配的字符串`sub_str`，采用最左匹配，且输出形式为`str_匹配的次数`
 
 ---
-###题11
+###题20
 高精度数相加，`string addBigInt(string num1,string num2)`，需要考虑正负数相加
 
 ---
-###题12
+###题21
 鉴定回文数组，即给定一个数组判断是否是回文
 
 ---
-###题13
+###题22
 求两个整型数组的异集，即A+B-(A与B的交集)
 
 ---
-###题14
+###题23
 判定德州扑克的牌型。给5张牌，返回它的牌型，4个的，3个+对子，顺子，3个+2个单张，2对，1对，其他。
 
 ---
-###题15 最长回文
-一段字符串中提取最长的回文长度
+###题24 最长回文
+一段字符串中提取最长的回文长度  
+
+---
+###题25 
+给定的一个字符串，比如：`this is my program`，要求将每个单词的首字母大写，输出：`This Is My Program`
+
+---
+###题26
+给定一个字符串，要求将其逆向输出，如：`adcdefgik`,输出：`kigfedcda`
+
+---
+###题27
+给定一个字符串，让你判定是否是正确的邮件地址 
+
+---
+###题28 语言识别问题
+问题描述
+给你一段英文或德文文字，你能编程识别它可能是哪种语言吗？研究发现，统计文字中字母“t”（或“T”）与“s”（或“S”）出现的次数，如果给定文字中“t”（或“T”）的出现次数比“s”（或“S”）多，则可能为英文，否则可能为德文。
+
+问题输入  
+输入包括多个行数，首先给出整数N（1<N<10000），接着给出N行文字，每一行文字至少包括一个字符，至多100个字符。  
+问题输出  
+输出包括一行，如果输入文字可能为英文，则输出English，否则输出Deutsch。  
+
+>示例  
+>输入  
+6  
+ON THIS THE REST OF THE ACHAEANS WITH  
+ONE VOICE WERE FOR RESPECTING  
+THE PRIEST AND TAKING THE RANSOM THAT HE OFFERED; BUT NOT SO AGAMEMNON,  
+WHO SPOKE FIERCELY TO HIM AND SENT HIM ROUGHLY AWAY.  
+OLD MAN, SAID HE,  
+LET ME NOT FIND YOU TARRYING ABOUT OUR SHIPS  
+>输出  
+English
+
+---
+###题29 销售网络问题
+问题描述  
+华为公司积极开拓北美市场，首先在北美建立销售总部，总部在附近地区发展一些销售点，这些销售点可以发展建立下一级销售点，依此类推，最终形成一个新型分级销售网络。假设在销售网络中，有N个销售点（包括总部），将它们分别编号为1至N。考虑到金融危机，销售总部决定撤销一些销售点，保留其他销售点。需要注意是：  
+（1）如果撤销一个销售点，那么该销售点发展的所有下级销售点均要撤销，依此类推；  
+（2）销售总部不能撤销自己；  
+（3）销售总部可以不撤销任何销售点。  
+请你帮忙告诉华为公司：共存在多少个销售点撤销方案。  
+
+问题输入  
+输入包括多个行，首先给出一个整数N，接着N-1行给出销售网络的建立过程，在这N-1行中，第j行（1≤j≤N-1）给出一个整数k（i<k），表示销售点k发展了销售点j。销售点N就是销售总部。  
+问题输出  
+输出一行，给出销售点撤销方案数。
+
+>示例  
+>输入  
+3  
+2  
+3   
+输出  
+3  
+
+提示：样例有3个销售点（包括总部），“销售点2”发展了“销售点1”，“销售点3” 发展了“销售点2”，根据描述，有以下3种销售点撤销方案：（1）不撤销任何销售点；（2）撤销“销售点1”；（3）撤销“销售点1”、“销售点2”。
+
+---
+###题30 股票投资问题
+问题描述  
+股票是一种有价证券，是股份公司为筹集资金发给投资者作为公司资本部分所有权的凭证，成为股东以此获得股息（股利），并分享公司成长或交易市场波动带来的利润；但也要共同承担公司运作错误所带来的风险。南邮华为俱乐部会长小郑同学最近计划进入股市淘金，看中一支股票，借本次华为赛机会，请你帮忙指出：何时买卖这支股票，才能获得最大收益。已知小郑投资A元，可以预测到未来12天该支股票的价格，请注意：  
+（1）股票每一天的价格都不一样；  
+（2）如果同时有两种安排获得一样的收益，选择在股价最低时购买；  
+（3）小郑在12天内只能购买一次股票，并且认购的股数必须为整数；  
+（4）如果按照股价趋势，不能获得收益，只需输出IMPOSSIBLE。  
+
+问题输入  
+输入包括多个测试用例，首先给出测试用例数B，接着给出B个测试用例。每一个测试用例包括两行，其中第一行给出小郑计划投资的资金数A，第一行给出以空格分隔的12个整数，指出未来12天股票每一天价格F。注意：100≤A≤500，B≤200，1≤F≤250。
+问题输出  
+输出包括多行，对于每个测试用例输出一行，输出IMPOSSIBLE；或者以空格分隔的3个整数C、D、E，第1个整数C表示小郑第C天购买股票（1≤C≤11），第2个整数D表示小郑第D天卖出股票（C+1≤D≤12），第3个整数E表示小郑的股票收益。
+
+>示例  
+输入  
+2  
+146  
+208 117 109 238 144 248 138 39 106 9 159 18  
+120  
+12 11 10 9 8 7 6 5 4 3 2 1  
+输出  
+10 11 2400  
+IMPOSSIBLE  
